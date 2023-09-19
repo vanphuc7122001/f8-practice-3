@@ -423,7 +423,80 @@
           </div>
         </div>
       </section>
+
+      <!-- Project -->
+      <section class="project">
+        <div class="container">
+          <div class="project__inner">
+            <section class="project__row">
+              <h2 class="section-heading project__heading">
+                A quick glance of our past projects
+              </h2>
+              <div class="project__info">
+                <p class="project__info-desc">
+                  Are you strive for the fast project simplicity and clarity.
+                  Great design is born of those two things.
+                </p>
+                <div class="project__info-row">
+                  <span class="project__info-row-desc">
+                    Browse all Projects
+                  </span>
+                  <span class="project__info-icon">
+                    <i class="project__info-right fa fa-long-arrow-alt-right">
+                    </i>
+                  </span>
+                </div>
+              </div>
+            </section>
+            <section class="project__media">
+              <div class="project-block">
+                <video
+                  class="project__video"
+                  controls
+                  poster="./assets/img/poster.jpg"
+                  width="100%"
+                  height="100%"
+                >
+                  <source
+                    src="./assets/audio/video/video.mp4"
+                    type="audio/mp4"
+                  />
+                </video>
+                <button class="project__play-video">
+                  <i class="project__play-icon fa fa-play"></i>
+                </button>
+
+                <img
+                  src="./assets/img/project-decor-01.svg"
+                  alt=""
+                  class="project__decor"
+                />
+                <img
+                  src="./assets/img/project-decor-02.svg"
+                  alt=""
+                  class="project__decor"
+                />
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
+    <script>
+      window.addEventListener("load", (event) => {
+        const video = document.querySelector(".project__video");
+        const btn = document.querySelector(".project__play-video");
+
+        btn.addEventListener("click", (event) => {
+          if (video.paused) {
+            btn.style.display = "none";
+            video.play();
+          } else {
+            video.pause();
+          }
+        });
+      });
+    </script>
   </body>
 </html>
