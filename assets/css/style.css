@@ -82,15 +82,6 @@ a {
   line-height: 1.23;
 }
 
-/* .section-heading::before {
-  content: "";
-  display: inline-block;
-  width: 66px;
-  height: 2px;
-  background: var(--primary-color-black);
-  margin-top: -10px;
-} */
-
 .section-heading::after {
   content: "";
   display: inline-block;
@@ -98,6 +89,15 @@ a {
   height: 2px;
   background: var(--primary-color-black);
   margin-bottom: 10px;
+}
+
+.section-desc {
+  --font-size: 1.6rem;
+  color: var(--text-color-light-gray, #7d8188);
+  font-size: var(--font-size);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.62; /* 162.5% */
 }
 
 /* Header */
@@ -450,4 +450,214 @@ a {
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.7;
+}
+
+/* About */
+
+.about {
+  margin-top: 149px;
+}
+
+.about__inner {
+  display: flex;
+  gap: 64px;
+}
+
+.about__media {
+  position: relative;
+  width: 50%;
+}
+
+.about__img {
+  width: 284px;
+  height: 480px;
+  border-radius: 210px;
+  box-shadow: 0px 4px 234px 11px rgba(59, 137, 71, 0.25);
+  object-fit: cover;
+}
+
+.about__decor-icon {
+  position: absolute;
+  top: -25px;
+  left: 35px;
+}
+
+.about__img:first-of-type {
+  margin-top: 90px;
+}
+
+.about__img:last-of-type {
+  margin-top: 13px;
+}
+
+.about__images {
+  display: flex;
+  gap: 20px;
+}
+
+.about-media-block {
+  position: absolute;
+  right: -9px;
+  bottom: 8px;
+  max-width: 143px;
+  padding: 19px 23px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 7px 54px 0px rgba(154, 154, 154, 0.25);
+}
+
+.about-media-block__title {
+  color: var(--primary-color-black, #152427);
+  font-family: Public Sans;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.about-media-block__total {
+  margin-top: 6px;
+  color: var(--text-color-black-gray, #575d5e);
+  font-family: Public Sans;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.about-media-block__percent {
+  margin-top: 10px;
+  color: var(--primary-color-black, #152427);
+  font-family: Public Sans;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.4; /* 140% */
+}
+
+.about-media-block__progress-bar {
+  position: relative;
+  margin-top: 3px;
+  width: 100%;
+  height: 2px;
+  border-radius: 10px;
+  background: #eaeaea;
+}
+
+.about-media-block__progress-bar::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 2px;
+  border-radius: 10px;
+  background: #83a17d;
+  top: 0;
+  left: 0;
+}
+
+.about-media-block__status {
+  margin-top: 3px;
+  color: var(--primary-color-black, #152427);
+  font-family: Public Sans;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.4;
+  display: flex;
+  justify-content: end;
+}
+
+.about-media-block__circle {
+  margin-top: 3px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-media-block__circle::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #143c3c;
+}
+
+.about-team {
+  margin-top: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-team__name {
+  color: var(--primary-color-black, #152427);
+  font-family: Public Sans;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.4; /* 140% */
+}
+
+.about-team__avatar-list {
+  display: flex;
+  align-items: center;
+}
+
+.about-team__avatar-item {
+  margin-left: -4px;
+}
+
+.about-team__avatar {
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  border: 1px solid #fff;
+  object-fit: cover;
+}
+
+.about__info {
+  width: 50%;
+}
+
+.about__info--heading {
+  margin-top: 20px;
+  width: 483px;
+  color: var(--primary-color-black, #152427);
+  font-size: 4.2rem;
+  font-weight: 600;
+  line-height: 1.23;
+}
+
+.about__info--desc {
+  margin-top: 11px;
+  width: 478px;
+}
+
+.about__row {
+  margin-top: 36px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  position: relative;
+}
+
+.about__row::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #83a17d;
+  top: 69px;
+}
+
+.about__percent {
+  color: var(--primary-color-black, #152427);
+  font-size: 4.2rem;
+  font-weight: 600;
+  line-height: 1.23;
+}
+
+.about__row-desc {
+  width: 364px;
+  --font-size: 1.4rem;
 }
