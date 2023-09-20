@@ -912,3 +912,128 @@ a {
   font-weight: 500;
   line-height: 1.71;
 }
+
+/* Blog */
+.blog {
+  margin-top: 212px;
+}
+
+.blog__inner-row {
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.blog__heading {
+  width: 560px;
+  flex-shrink: 0;
+}
+
+.blog__desc {
+  width: 409px;
+  color: var(--text-color-light-gray, #7d8188);
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.blog__list {
+  margin-top: 90px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+}
+
+.blog-item {
+  transition: box-shadow 0.2s;
+  border-radius: 40px 40px 20px 20px;
+}
+
+.blog-item:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.blog__images {
+  border-radius: 40px 40px 0px 0px;
+  height: 317px;
+  overflow: hidden;
+}
+
+.blog__img {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 40px 40px 0px 0px;
+  object-fit: cover;
+  transition: scale 0.3s;
+}
+
+.blog-item:hover .blog__img {
+  scale: 1.1;
+}
+
+.blog__info {
+  padding: 26px 0 12px;
+  transition: padding 0.3s;
+}
+
+.blog-item:hover .blog__info {
+  padding: 26px 30px 12px;
+}
+
+.blog__info-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 107px;
+  height: 26px;
+  border-radius: 20px;
+  background: var(--scondery-color-light-green, #e2eddf);
+  color: #000;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.blog-item:hover .blog__info-btn {
+  color: #fff;
+  background: var(--primary-color-black-green, #143c3c);
+}
+
+.blog__info-title {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 2);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-top: 13px;
+  width: 346px;
+  color: var(--primary-color-black-green, #143c3c);
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.6;
+  transition: width 0.2s;
+}
+
+.blog-item:hover .blog__info-title {
+  width: 281px;
+}
+
+.blog__info-date {
+  margin: 38px 21px 0 0;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 16px;
+  color: var(--text-color-black-gray, #575d5e);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.blog__info-date::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #c4c4c4;
+}
