@@ -634,13 +634,18 @@
                   id="email"
                   class="form-input"
                   placeholder="Enter your email"
+                  required
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                 />
 
-                <img
-                  src="./assets/img/icon-footer.svg"
-                  alt=""
-                  class="form-icon"
-                />
+                <label for="email" class="form-label">
+                  <img
+                    src="./assets/img/icon-footer.svg"
+                    alt=""
+                    class="form-icon"
+                  />
+                </label>
+                <p class="form-error">Enter email must correct format</p>
               </div>
             </form>
             <ul class="social__list">

@@ -1101,6 +1101,15 @@ a {
   font-weight: 600;
 }
 
+.form-error {
+  color: rgb(236, 190, 190);
+  padding: 8px 0;
+  display: none;
+}
+
+.form-group:has(:invalid:not(:placeholder-shown)) .form-error {
+  display: block;
+}
 .social__list {
   margin-top: 47px;
   display: inline-flex;
