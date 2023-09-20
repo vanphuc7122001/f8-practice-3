@@ -19,6 +19,11 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 /* Common */
 .line-clamp {
   display: -webkit-box;
@@ -1036,4 +1041,136 @@ a {
   width: 100%;
   height: 1px;
   background: #c4c4c4;
+}
+
+/* Footer */
+.footer {
+  margin-top: 102px;
+  background: var(--primary-color-black-green, #143c3c);
+}
+
+.footer__inner {
+  padding: 72px 0 50px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer__info,
+.footer__list {
+  width: 50%;
+}
+
+.footer__info-heading {
+  color: var(--text-color-white, #fff);
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+
+.form {
+  width: 354px;
+  position: relative;
+}
+
+.form-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+
+.form-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #6a8383;
+  padding: 28px 0;
+  color: #6a8383;
+  font-size: 2.2rem;
+}
+
+.form-input,
+.form-input:focus,
+.form-input:placeholder-shown {
+  background: transparent;
+}
+
+.form-input::placeholder {
+  color: var(--scondery-color-gray, #6a8383);
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.social__list {
+  margin-top: 47px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+}
+
+.social__item {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s, border 0.2s;
+}
+
+.social__item:hover {
+  background: rgba(167, 83, 37, 1);
+  border: none;
+}
+
+.footer__list {
+  padding-top: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-item-heading {
+  color: var(--text-color-white, #fff);
+  font-family: Public Sans;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.55;
+}
+
+.footer-item__list {
+  margin-top: 14px;
+}
+
+.footer-item__link {
+  color: var(--scondery-color-gray, #6a8383);
+  font-family: Public Sans;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2;
+}
+
+.footer__line {
+  margin-top: 45px;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    #143c3c 2.28%,
+    #295a5a 55.65%,
+    rgba(38, 82, 82, 0) 102.06%
+  );
+}
+
+.footer__copyright {
+  padding: 20px 0;
+  color: var(--scondery-color-gray, #6a8383);
+  font-family: Public Sans;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: center;
 }
